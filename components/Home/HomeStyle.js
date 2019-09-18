@@ -13,4 +13,10 @@ export default StyleSheet.create({
     flexDirection: 'row',
     padding: 15
   },
+  TitleStyle: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between'
+  }
 });

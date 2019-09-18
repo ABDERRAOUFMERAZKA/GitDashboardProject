@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Array [
+  <TextInput
+    allowFontScaling={true}
+    borderBottomColor="fff"
+    placeholder="Please enter github user"
+    rejectResponderTermination={true}
+    style={
+      Object {
+        "borderColor": "#fff",
+        "width": 280,
+      }
+    }
+    underlineColorAndroid="transparent"
+  />,
+  <View
+    accessibilityRole="button"
+    accessibilityStates={Array []}
+    accessible={true}
+    clickable={false}
+    isTVSelectable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {},
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#007AFF",
+              "fontSize": 18,
+              "padding": 8,
+              "textAlign": "center",
+            },
+            Object {
+              "color": "#f194ff",
+            },
+          ]
+        }
+      >
+        Search
+      </Text>
+    </View>
+  </View>,
+]
+`;

@@ -74,6 +74,13 @@ state = {
     }
   }
 
+  goToHome() {
+    this.setState(prevState => ({
+      ...prevState,
+      isUserExist: false,
+    }))
+  }
+
   render () {
     const {
       UserName,
@@ -95,13 +102,13 @@ state = {
     isDataFetched &&
     isUserExist ? (
       <Fragment>
-        <ListItem
-          leftAvatar={{
-            source: { uri: avatarUrl }
-          }}
-          title={UserName}
-        />
-        <ScrollView>
+          <ListItem
+            leftAvatar={{
+              source: { uri: avatarUrl }
+            }}
+            title={UserName}
+          />
+        <ScrollView style={{flex: 1}}>
           {
             data.map((element) => (
               <TouchableOpacity
@@ -139,7 +146,7 @@ state = {
     )
     return(
       <Fragment>
-        <Head />
+        <Head goToHomePage={() => this.goToHome()} />
         {bodyContent}
       </Fragment>
    )

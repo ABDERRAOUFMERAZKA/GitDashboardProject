@@ -11,7 +11,7 @@ export const INPUT_FORM = {
 
 export const HEADER = {
     icon: {
-        name: 'menu',
+        name: 'home',
         color: '#fff'
     },
     title: 'Github Dashboard Sample'

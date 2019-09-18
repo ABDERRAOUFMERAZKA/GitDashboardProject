@@ -18,19 +18,19 @@ const DetailsRepository = ({
     <View>
       <ListItem
         leftAvatar={{
-          source: { uri: data.owner.avatar_url }
+          source: { uri: data && data.owner.avatar_url }
         }}
         title={userName}
-        subtitle={data.html_url}
+        subtitle={data && data.html_url}
       />
       <ListItem
-        title={data.name}
-        subtitle={data.language}
+        title={data && data.name}
+        subtitle={data && data.language}
         titleStyle={styles.container}
         subtitleStyle={styles.container}
       />
       <ListItem
-        title={data.description}
+        title={data && data.description}
         titleStyle={styles.container}
         subtitleStyle={styles.container}
       />
